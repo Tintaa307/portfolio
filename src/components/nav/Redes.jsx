@@ -11,6 +11,10 @@ const redes = [
     name: "ri-github-line",
     url: "https://github.com/Tintaa307",
   },
+  {
+    name: "ri-linkedin-line",
+    url: "https://www.linkedin.com/in/tinta-gonzaa-b9a8a817b/",
+  },
 ]
 
 export const Redes = () => {
