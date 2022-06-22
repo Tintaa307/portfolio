@@ -141,9 +141,10 @@ li {
   flex-direction: column;
 }
 
-.container-redes .container-redes-icon a i {
+.container-redes .container-redes-icon a {
   font-size: 1.3rem;
   cursor: pointer;
+  margin: 10px 0;
 }
 
 @keyframes largest {

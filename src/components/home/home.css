@@ -1,0 +1,60 @@
+.container-home {
+  width: 100%;
+  height: 100vh;
+}
+
+.padre {
+  background-color: red;
+  transform: scale(1); /*reaparece el elemento hijo con el mause al centro*/
+}
+
+.container-home .container-title {
+  position: absolute;
+  top: 140px;
+  left: 380px;
+  line-height: 80px;
+}
+
+.container-home .container-title::after {
+  content: "<h1>";
+  position: absolute;
+  font-family: var(--details-font);
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: 0;
+  animation: appear 1s linear;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.container-home .container-title::before {
+  content: "<h1>";
+  position: absolute;
+  top: -50px;
+  font-family: var(--details-font);
+  color: #fff;
+  font-size: 1.5rem;
+  opacity: 0;
+  animation: appear 1s linear;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.container-home .container-title h1 {
+  font-size: 3.5rem;
+  letter-spacing: 1.5px;
+}
+
+.container-home .container-title h1 span.container-2 {
+  margin-left: 60px;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
