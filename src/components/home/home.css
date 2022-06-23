@@ -3,11 +3,6 @@
   height: 100vh;
 }
 
-.padre {
-  background-color: red;
-  transform: scale(1); /*reaparece el elemento hijo con el mause al centro*/
-}
-
 .container-home .container-title {
   position: absolute;
   top: 140px;
@@ -49,6 +44,179 @@
   margin-left: 60px;
 }
 
+.container-home .container-btn {
+  position: absolute;
+  top: 390px;
+  left: 370px;
+}
+
+.container-home .container-btn button {
+  width: 260px;
+  height: 45px;
+  background-color: transparent;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  font-family: var(--body-font);
+  z-index: 2;
+}
+
+.container-home .container-btn button .capa {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 5px;
+  width: 0px;
+  height: 43px;
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: 1;
+  transition: 0.2s ease-in-out;
+  transform-origin: left;
+}
+
+.container-home .container-btn button:hover .capa {
+  width: 258px;
+  transition: 0.2s ease-in-out;
+}
+
+.container-home .container-btn button a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  z-index: 2;
+  font-weight: bold;
+}
+
+.container-home .container-card {
+  position: absolute;
+  top: 130px;
+  left: 800px;
+  width: 210px;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container-home .container-card::before {
+  content: "";
+  position: absolute;
+  width: 155px;
+  height: 140%;
+  background: #4e54c8; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8f94fb,
+    #4e54c8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: animate 4s linear infinite;
+}
+
+.container-home .container-card::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: #0f0c29; /* fallback for old browsers */
+  border-radius: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+.container-home .container-card h2 {
+  position: absolute;
+  top: 60px;
+  z-index: 2;
+  transition: 0.4s ease-in-out;
+}
+
+.container-home .container-card .card img {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+  transition: 0.4s ease-in-out;
+}
+
+.container-home .container-card .content {
+  position: relative;
+  width: 100%;
+  bottom: -300px;
+  transition: 0.4s ease-in-out;
+}
+
+.container-home .container-card:hover .content {
+  bottom: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.container-home .container-card:hover h2 {
+  top: -120px;
+  transition: 0.4s ease-in;
+}
+
+.container-home .container-card:hover img {
+  top: -180px;
+  transition: 0.4s ease-in;
+}
+
+.container-home .container-card .content h3 {
+  color: #fff;
+  position: absolute;
+  top: -90px;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  left: 38px;
+  transition: 0.4s ease-in-out;
+  z-index: 2;
+}
+
+.container-home .container-card .content h4 {
+  color: #fff;
+  position: absolute;
+  top: -50px;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  left: 50px;
+  z-index: 2;
+  transition: 0.4s ease-in-out;
+}
+
+.container-home .container-card .content a {
+  text-decoration: none;
+}
+
+.container-home .container-card .content a button {
+  position: absolute;
+  color: #fff;
+  top: 50px;
+  left: 40px;
+  width: 130px;
+  height: 35px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  z-index: 2;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: transparent;
+}
+
 @keyframes appear {
   0% {
     opacity: 0;
@@ -56,5 +224,14 @@
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

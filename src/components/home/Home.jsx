@@ -1,6 +1,7 @@
 import React from "react"
 import "./home.css"
-import { motion } from "framer-motion"
+import { motion, transform } from "framer-motion"
+import Logo from "../../assets/img/yodita.png"
 
 const Home = () => {
   return (
@@ -132,6 +133,48 @@ const Home = () => {
             </span>
           </motion.h1>
         </div>
+        <div className="container-btn">
+          <motion.button
+            className="btn-home"
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{
+              duration: 0.7,
+              delay: 1.8,
+              ease: "easeOut",
+              type: "spring",
+              stiffness: 300,
+              bounce: 0.6,
+            }}
+          >
+            <div className="capa"></div>
+            <a href="">Contact Me!</a>
+          </motion.button>
+        </div>
+        <motion.div
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{
+            duration: 0.7,
+            delay: 2.2,
+            type: "spring",
+            stiffness: 300,
+            bounce: 0.6,
+          }}
+          className="container-card"
+        >
+          <h2>Personal Card</h2>
+          <div className="card">
+            <img src={Logo} alt="" />
+          </div>
+          <div className="content">
+            <h3>You want to</h3>
+            <h4>Know me?</h4>
+            <a href="About">
+              <button>About Me</button>
+            </a>
+          </div>
+        </motion.div>
       </div>
     </main>
   )
