@@ -131,11 +131,11 @@ html {
 }
 
 ::-webkit-scrollbar {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: #4e54c8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: #8f94fb;
   border-radius: 5rem;
 }
 
@@ -172,8 +172,4 @@ ul {
 
 a {
   text-decoration: none;
-}
-
-section.section {
-  margin-top: 4rem;
 }

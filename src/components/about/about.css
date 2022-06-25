@@ -1,0 +1,57 @@
+.section-about {
+  position: relative;
+  width: 100%;
+  margin-top: 9rem;
+  margin-bottom: 4rem;
+}
+
+.section-about h2 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.section-about .container-about .container-content {
+  width: 50%;
+  position: relative;
+  left: 150px;
+  margin-top: 6rem;
+}
+
+.section-about .container-about .container-content::after {
+  content: "<p>";
+  position: absolute;
+  font-family: var(--details-font);
+  color: #fff;
+  font-size: 1.4rem;
+  left: -5px;
+}
+
+.section-about .container-about .container-content::before {
+  content: "<p>";
+  position: absolute;
+  font-family: var(--details-font);
+  color: #fff;
+  font-size: 1.4rem;
+  top: -40px;
+  left: -5px;
+}
+
+.section-about .container-about .container-content p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  width: 70%;
+  letter-spacing: 1.2px;
+}
+
+.section-about .container-about .container-gif {
+  width: 30%;
+  position: absolute;
+  left: 750px;
+  top: 130px;
+}
+
+.section-about .container-about .container-gif img {
+  width: 100%;
+  border-radius: 15px;
+}

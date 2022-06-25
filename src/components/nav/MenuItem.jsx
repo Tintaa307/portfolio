@@ -20,19 +20,19 @@ const variants = {
 
 const menuParts = [
   {
-    name: "Home",
+    name: "#Home",
   },
   {
-    name: "About",
+    name: "#About",
   },
   {
-    name: "Works",
+    name: "#Works",
   },
   {
-    name: "Skills",
+    name: "#Skills",
   },
   {
-    name: "Contact",
+    name: "#Contact",
   },
 ]
 

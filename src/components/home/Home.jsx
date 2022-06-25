@@ -5,7 +5,7 @@ import Logo from "../../assets/img/yodita.png"
 
 const Home = () => {
   return (
-    <main className="container-home">
+    <main id="Home" className="container-home">
       <div className="container-content">
         <div className="container-title">
           <motion.h1 aria-label="Frontend Developer">
@@ -170,7 +170,7 @@ const Home = () => {
           <div className="content">
             <h3>You want to</h3>
             <h4>Know me?</h4>
-            <a href="About">
+            <a href="#About">
               <button>About Me</button>
             </a>
           </div>
