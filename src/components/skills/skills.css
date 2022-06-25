@@ -1,0 +1,139 @@
+.section-skills {
+  width: 100%;
+  margin-top: 16rem;
+  margin-bottom: 4rem;
+}
+
+.section-skills h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.section-skills .container-skills {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.section-skills .container-skills .container-categories {
+  width: 100%;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-skills .container-skills .container-categories div {
+  display: inline-block;
+  margin: 0 50px;
+  border: 2px solid #8f94fb;
+  border-radius: 15px;
+  width: 75px;
+  height: 75px;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-skills .container-skills .container-categories div:nth-child(1) {
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.section-skills .container-skills .container-categories div:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #4e54c8;
+}
+
+.section-skills
+  .container-skills
+  .container-categories
+  div:hover:nth-child(1)::before {
+  content: "All Skills";
+  position: absolute;
+  margin-top: -80px;
+  font-family: var(--body-font);
+  margin-left: -110px;
+  width: 120px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+  background-color: #8f94fb;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.section-skills
+  .container-skills
+  .container-categories
+  div:hover:nth-child(2)::before {
+  content: "Frontend";
+  position: absolute;
+  margin-top: -50px;
+  font-family: var(--body-font);
+  margin-left: -90px;
+  width: 120px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+  background-color: #8f94fb;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.section-skills
+  .container-skills
+  .container-categories
+  div:hover:nth-child(3)::before {
+  content: "Backend";
+  position: absolute;
+  margin-top: -50px;
+  font-family: var(--body-font);
+  margin-left: -90px;
+  width: 120px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+  background-color: #8f94fb;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.section-skills
+  .container-skills
+  .container-categories
+  div:hover:nth-child(4)::before {
+  content: "Develop Tools";
+  position: absolute;
+  margin-top: -50px;
+  font-family: var(--body-font);
+  margin-left: -90px;
+  width: 120px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  padding-top: 30px;
+  background-color: #8f94fb;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+.section-skills .container-skills .container-categories div i {
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #fff;
+}
