@@ -27,6 +27,13 @@ const sidebar = {
   },
 }
 
+const animateComplete = ({ isOpen }) => {
+  const nav = document.querySelector(".nav")
+  if (isOpen) {
+    nav.classList.toggle("open")
+  }
+}
+
 export const Nav = () => {
   const [isOpen, toggleOpen] = useCycle(false, true)
   const containerRef = useRef(null)
@@ -38,7 +45,7 @@ export const Nav = () => {
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
-      className="nav"
+      className={`nav ${isOpen ? "open" : ""}`}
     >
       <motion.div className="background" variants={sidebar} />
       <Navigation />
